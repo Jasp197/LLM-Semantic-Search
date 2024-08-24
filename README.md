@@ -1,66 +1,35 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# LLM Induced Semantic Search Engine for Academic Articles
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This project focuses on developing a semantic search engine tailored for academic articles. By leveraging Large Language Models (LLMs) like BERT, Vicuna, and Llama, the search engine enhances the search capabilities beyond traditional keyword-based methods. The engine is designed to better understand user queries and retrieve more contextually relevant academic papers.
 
-## About Laravel
+## Key Features
+- **LLM Integration**: Utilizes advanced language models (BERT, Vicuna, Llama) to improve semantic understanding and query expansion for more accurate search results.
+- **Query Processor**: Processes user queries with stop-word removal, stemming, and normalization to enhance search performance.
+- **Keyword Generator**: Employs LLMs to generate relevant keywords for academic articles, improving the precision of search results.
+- **Database**: Integrates with Scopus.com to retrieve and store academic papers for training the search engine.
+- **Ranker**: Ranks search results based on semantic similarity, popularity, and relevance to the user's query.
+- **Web Interface**: Provides a user-friendly web interface for searching academic articles, complete with filtering options and a re-search functionality for refining search results.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## How to Use
+1. **Enter a Query**: Use the search bar to input your academic query.
+2. **View Results**: Browse through the ranked list of academic articles retrieved based on your search.
+3. **Filter Results**: Refine your search with additional filters like author name, publication date, and more.
+4. **Re-Search**: Use the re-search functionality to find documents related to a specific article in the search results.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Technologies Used
+- **Programming Languages**: Python, JavaScript (for front-end)
+- **Libraries**: BERT, Vicuna, Llama (for NLP), D3.js, Sencha.js (for visualization)
+- **Database**: Scopus API integration for academic papers
+- **Frameworks**: Node.js (for backend), Bootstrap (for front-end)
+- **Tools**: Cosine Similarity, Jaccard Coefficient, WordNet for relevance scoring
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Project Team
+- **Jaspreet Chowdhary (Leader)** - jaspreet@vt.edu
+- **Chaitanya Kanakamedala** - venkatachaitanya@vt.edu
+- **Sourav Mondal** - sourmon@vt.edu
 
-## Learning Laravel
+## Future Enhancements
+- **Global Search**: Expand the search engine to include multiple academic databases like PubMed, IEEE Xplore, and Google Scholar.
+- **Additional Features**: Incorporate more advanced NLP techniques and visualization tools to further improve search accuracy and user experience.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project aims to streamline the academic research process by providing a more intelligent and contextually aware search engine, leveraging the latest advancements in large language models.
