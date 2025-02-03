@@ -14,7 +14,13 @@ This project focuses on developing a semantic search engine tailored for academi
 1. **Enter a Query**: Use the search bar to input your academic query.
 2. **View Results**: Browse through the ranked list of academic articles retrieved based on your search.
 3. **Filter Results**: Refine your search with additional filters like author name, publication date, and more.
+
+<img src="public/assets/img/search-2.png" width="700">
+
 4. **Re-Search**: Use the re-search functionality to find documents related to a specific article in the search results.
+
+<img src="public/assets/img/search-1.png" width="700">
+
 
 ## Technologies Used
 - **Programming Languages**: Python, JavaScript (for front-end)
